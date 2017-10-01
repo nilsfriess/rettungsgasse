@@ -1,3 +1,5 @@
+#!/usr/bin/env nodejs
+
 let fetch = require('fetch').fetchUrl
 let xml2json = require('xml2json')
 let _ = require('lodash')
@@ -6,18 +8,11 @@ let geocoder = require('node-geocoder')({ apiKey: 'AIzaSyCmYzPMAThClsbQU5kC30x6V
 let app = require('express')()
 
 // set true to use demo xml file
-const debug = true
-const readLocal = true
+let debug = false
+let readLocal = false
 
 //demo coordinates of the car 
 let coords = []
-if (debug) {
-    coords = [
-        [48.356701, 7.793980],
-        [48.358688, 7.795312],
-
-    ]
-}
 
 app.get('/api', (req, res, err) => {
     res.send(`
@@ -37,6 +32,27 @@ app.get('/api/lonlat/:coords', (req, res, err) => {
         res.redirect('/api')
     }
     checkForRescueAlley(debug ? coords : req.params.coords, (response) => {
+        res.json(response)
+    })
+})
+
+app.get('/api/test/lonlat/:coords', (req, res, err) => {
+    checkForRescueAlley(debug ? coords : req.params.coords, (response) => {
+        res.json(response)
+    })
+})
+
+app.get('/api/test/lonlat', (req, res, err) => {
+    debug = true
+    readLocal = true
+
+    coords = [
+        [48.356701, 7.793980],
+        [48.358688, 7.795312],
+
+    ]
+
+    checkForRescueAlley(coords, (response) => {
         res.json(response)
     })
 })
