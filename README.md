@@ -1,4 +1,8 @@
-## Rescue Alley API
+## Rescue Alley API  
+
+Some people tend to forget to form a rescue alley while driving towards or in a traffic jam. Reminding them (on the radio, through push notifications on their phones or on the display of their infotainment systems) too often and in situations where rescue alleys aren't really needed just annoys them.  
+We found a solution that can be widely used and won't annoy the driver because we only tell them to form a rescue alley if it's really necessary. 
+
 
 **What this API does**  
 You send us two coordinates (latitude longitude) of you (e.g. your current position and your position 20 seconds ago).
@@ -26,4 +30,3 @@ The response you get is a JSON-Object, which will look like this:
 }
 ```
 ```shouldShowWarning``` is ```true``` if you should form a rescue alley.   
- 
