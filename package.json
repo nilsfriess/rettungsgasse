@@ -13,6 +13,7 @@
     "fetch": "^1.1.0",
     "fs": "0.0.1-security",
     "lodash": "^4.17.4",
+    "node-geocoder": "^3.20.1",
     "xml2json": "^0.11.0"
   }
 }
