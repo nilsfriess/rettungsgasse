@@ -24,9 +24,9 @@ app.get('/api', (req, res, err) => {
     <body style="font-family: Helvetica, Arial, Sans-Serif; padding: 70px">
         <h1>How to use this API</h1>
         <p>Go to /api/lonlat and pass the last two coordinates of your car, e.g.</p>
-        <code style="background: #222">
+        <code style="background: #eee">
             <a style="text-decoration: none" href="https://rescuealley.tech/api/lonlat/47.1232,6.123124+5.12313,4.2326">
-                <span style="color=#eee !important">https://rescuealley.tech/api/lonlat/47.1232,6.123124+5.12313,4.2326</span>
+                <span style="color: #434343 !important">https://rescuealley.tech/api/lonlat/47.1232,6.123124+5.12313,4.2326</span>
             </a>
         </code>
         <br>
