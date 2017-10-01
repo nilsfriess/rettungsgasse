@@ -14,6 +14,10 @@ let readLocal = false
 //demo coordinates of the car 
 let coords = []
 
+app.get('/', (req, res, err) => {
+    res.redirect('/api')
+})
+
 app.get('/api', (req, res, err) => {
     res.send(`
     <html>
