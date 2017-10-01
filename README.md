@@ -26,6 +26,3 @@ The response you get is a JSON-Object, which will look like this:
 }
 ```
 ```shouldShowWarning``` is ```true``` if you should form a rescue alley.   
-
-**GitHub Repo**
-[link](https://github.com/nilsfriess/rettungsgasse)
