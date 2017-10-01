@@ -272,7 +272,7 @@ function checkForRescueAlley(coords, cb) {
     })
 }
 
-function isAccidentInArea(accident, area, delta = 0.5) {
+function isAccidentInArea(accident, area, delta = 0.05) {
     let isInArea = false
     accident.geo.latlong.forEach((coords) => {
         coords = coords.split(',')
