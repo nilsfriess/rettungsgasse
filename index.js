@@ -9,7 +9,7 @@ let app = require('express')()
 const xmlString = require('./TicMessages.js').xml
 
 // set true to use demo xml file
-let debug = false
+let debug = true
 let readLocal = false
 
 //demo coordinates of the car 
@@ -40,7 +40,7 @@ app.get('/api/lonlat/:coords', (req, res, err) => {
     if (!req.params.coords) {
         res.redirect('/api')
     }
-    checkForRescueAlley(debug ? coords : req.params.coords, (response) => {
+    checkForRescueAlley(req.params.coords, (response) => {
         res.json(response)
     })
 })
