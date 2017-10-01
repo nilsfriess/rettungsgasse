@@ -6,6 +6,7 @@ let _ = require('lodash')
 let fs = require('fs')
 let geocoder = require('node-geocoder')({ apiKey: 'AIzaSyCmYzPMAThClsbQU5kC30x6Vc-dLaBGHdM' })
 let app = require('express')()
+const xmlString = require('./TicMessages.js').xml
 
 // set true to use demo xml file
 let debug = false
@@ -118,7 +119,7 @@ function checkForRescueAlley(coords, cb) {
         let jsonBody = {}
 
         if (readLocal) {
-            jsonBody = xml2json.toJson(fs.readFileSync('./TicMessages.xml', 'utf8'), { object: true })
+            jsonBody = xml2json.toJson(xmlString, { object: true })
         } else {
             jsonBody = xml2json.toJson(body.toString(), {
                 object: true,

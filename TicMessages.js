@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+const xml = `<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <vwd4 hash="cd9e5dfa15182334ebac416e3cebbd94" source="Landesmeldestelle für den Verkehrswarndienst Baden-Württemberg" update="30.09.2017 23:31" topical="-1" net="Internet" duration="707 ms" version="4.3.17.707|15.08.2017" cachekey="vwdmsg43_BW">
     <topic name="A 5" type="Autobahn">
         <message date="27.09.2017" time="10:16" id="636424112571093750">
@@ -132,3 +132,6 @@
         <permanent>41</permanent>
     </summary>
 </vwd4>
+`
+
+module.exports.xml = xml
