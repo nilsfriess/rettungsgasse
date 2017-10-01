@@ -31,10 +31,31 @@ const xml = `<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
             </signs>
             <webcams />
             <geo>
-                <latlong>45.2,7.90414</latlong>
-                <latlong>45.40269,7.85599</latlong>
-                <latlong>48.40249,7.85569</latlong>
-                <latlong>48.35914,7.79544</latlong>
+            <latlong>49.27571,8.61731</latlong>
+            <latlong>49.27601,8.61744</latlong>
+            <latlong>49.27650,8.61774</latlong>
+            <latlong>49.27667,8.61783</latlong>
+            <latlong>49.27756,8.61833</latlong>
+            <latlong>49.27835,8.61861</latlong>
+            <latlong>49.27856,8.61867</latlong>
+            <latlong>49.27879,8.61872</latlong>
+            <latlong>49.27900,8.61874</latlong>
+            <latlong>49.27923,8.61872</latlong>
+            <latlong>49.27944,8.61869</latlong>
+            <latlong>49.27989,8.61855</latlong>
+            <latlong>49.28011,8.61846</latlong>
+            <latlong>49.28033,8.61835</latlong>
+            <latlong>49.28056,8.61824</latlong>
+            <latlong>49.28101,8.61800</latlong>
+            <latlong>49.28122,8.61787</latlong>
+            <latlong>49.28164,8.61752</latlong>
+            <latlong>49.28183,8.61732</latlong>
+            <latlong>49.28218,8.61685</latlong>
+            <latlong>49.28265,8.61609</latlong>
+            <latlong>49.28284,8.61581</latlong>
+            <latlong>49.28310,8.61533</latlong>
+            <latlong>49.28348,8.61462</latlong>
+            <latlong>49.28371,8.61435</latlong>
             </geo>
             <info content="Dauermeldung" />
         </message>
